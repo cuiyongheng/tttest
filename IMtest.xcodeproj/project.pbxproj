@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0412C9871E8B87E10013DD3A /* UINavigationController+XXTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C9791E8B87E10013DD3A /* UINavigationController+XXTransition.m */; };
+		0412C9881E8B87E10013DD3A /* UIViewController+XXTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C97B1E8B87E10013DD3A /* UIViewController+XXTransition.m */; };
+		0412C9891E8B87E10013DD3A /* XXAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C97D1E8B87E10013DD3A /* XXAnimatedTransitioning.m */; };
+		0412C98A1E8B87E10013DD3A /* XXGlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C97F1E8B87E10013DD3A /* XXGlobalConst.m */; };
+		0412C98B1E8B87E10013DD3A /* XXInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C9811E8B87E10013DD3A /* XXInteractiveTransition.m */; };
+		0412C98C1E8B87E10013DD3A /* XXTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C9841E8B87E10013DD3A /* XXTransition.m */; };
+		0412C98D1E8B87E10013DD3A /* XXTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C9861E8B87E10013DD3A /* XXTransitionManager.m */; };
+		0412C9901E8B880F0013DD3A /* NextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C98F1E8B880F0013DD3A /* NextVC.m */; };
+		0412C9931E8B88220013DD3A /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C9921E8B88220013DD3A /* ThirdVC.m */; };
+		0412C9981E8B8AB80013DD3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412C9971E8B8AB80013DD3A /* ViewController.m */; };
 		04141AF11E68FF1700E30C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04141AF01E68FF1700E30C0D /* main.m */; };
 		04141AF41E68FF1700E30C0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04141AF31E68FF1700E30C0D /* AppDelegate.m */; };
 		04141AFA1E68FF1700E30C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04141AF81E68FF1700E30C0D /* Main.storyboard */; };
@@ -147,7 +157,6 @@
 		04141CFF1E68FFE700E30C0D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04141CFE1E68FFE700E30C0D /* libz.tbd */; };
 		04141D011E68FFEF00E30C0D /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04141D001E68FFEF00E30C0D /* libstdc++.6.0.9.tbd */; };
 		04141D031E68FFF600E30C0D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04141D021E68FFF600E30C0D /* libsqlite3.tbd */; };
-		046E98181E8A18ED0018CAED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E98171E8A18ED0018CAED /* ViewController.m */; };
 		046E981A1E8A37E90018CAED /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046E98191E8A37E90018CAED /* UShareUI.framework */; };
 		046E981E1E8A38380018CAED /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046E981B1E8A38370018CAED /* UMSocialCore.framework */; };
 		046E981F1E8A38380018CAED /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046E981C1E8A38370018CAED /* UMSocialNetwork.framework */; };
@@ -179,12 +188,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0412C9781E8B87E10013DD3A /* UINavigationController+XXTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+XXTransition.h"; sourceTree = "<group>"; };
+		0412C9791E8B87E10013DD3A /* UINavigationController+XXTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+XXTransition.m"; sourceTree = "<group>"; };
+		0412C97A1E8B87E10013DD3A /* UIViewController+XXTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XXTransition.h"; sourceTree = "<group>"; };
+		0412C97B1E8B87E10013DD3A /* UIViewController+XXTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XXTransition.m"; sourceTree = "<group>"; };
+		0412C97C1E8B87E10013DD3A /* XXAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXAnimatedTransitioning.h; sourceTree = "<group>"; };
+		0412C97D1E8B87E10013DD3A /* XXAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXAnimatedTransitioning.m; sourceTree = "<group>"; };
+		0412C97E1E8B87E10013DD3A /* XXGlobalConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXGlobalConst.h; sourceTree = "<group>"; };
+		0412C97F1E8B87E10013DD3A /* XXGlobalConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXGlobalConst.m; sourceTree = "<group>"; };
+		0412C9801E8B87E10013DD3A /* XXInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXInteractiveTransition.h; sourceTree = "<group>"; };
+		0412C9811E8B87E10013DD3A /* XXInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXInteractiveTransition.m; sourceTree = "<group>"; };
+		0412C9821E8B87E10013DD3A /* XXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXMacro.h; sourceTree = "<group>"; };
+		0412C9831E8B87E10013DD3A /* XXTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTransition.h; sourceTree = "<group>"; };
+		0412C9841E8B87E10013DD3A /* XXTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTransition.m; sourceTree = "<group>"; };
+		0412C9851E8B87E10013DD3A /* XXTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTransitionManager.h; sourceTree = "<group>"; };
+		0412C9861E8B87E10013DD3A /* XXTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTransitionManager.m; sourceTree = "<group>"; };
+		0412C98E1E8B880F0013DD3A /* NextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextVC.h; sourceTree = "<group>"; };
+		0412C98F1E8B880F0013DD3A /* NextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextVC.m; sourceTree = "<group>"; };
+		0412C9911E8B88220013DD3A /* ThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdVC.h; sourceTree = "<group>"; };
+		0412C9921E8B88220013DD3A /* ThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdVC.m; sourceTree = "<group>"; };
+		0412C9961E8B8AB80013DD3A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0412C9971E8B8AB80013DD3A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04141AEC1E68FF1700E30C0D /* IMtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04141AF01E68FF1700E30C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04141AF21E68FF1700E30C0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04141AF31E68FF1700E30C0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04141AF51E68FF1700E30C0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04141AF61E68FF1700E30C0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04141AF91E68FF1700E30C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04141AFB1E68FF1700E30C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04141AFE1E68FF1700E30C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -500,7 +528,6 @@
 		04141D001E68FFEF00E30C0D /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		04141D021E68FFF600E30C0D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		04141D041E69003600E30C0D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		046E98171E8A18ED0018CAED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = IMtest/ViewController.m; sourceTree = "<group>"; };
 		046E98191E8A37E90018CAED /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UShareUI.framework; path = Pods/UMengUShare/UShareSDK/UMSocialUI/UShareUI.framework; sourceTree = "<group>"; };
 		046E981B1E8A38370018CAED /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMSocialCore.framework; path = Pods/UMengUShare/UShareSDK/UMSocialSDK/UMSocialCore.framework; sourceTree = "<group>"; };
 		046E981C1E8A38370018CAED /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMSocialNetwork.framework; path = Pods/UMengUShare/UShareSDK/UMSocialSDK/UMSocialNetwork.framework; sourceTree = "<group>"; };
@@ -556,10 +583,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0412C9771E8B87E10013DD3A /* XXTransition */ = {
+			isa = PBXGroup;
+			children = (
+				0412C9781E8B87E10013DD3A /* UINavigationController+XXTransition.h */,
+				0412C9791E8B87E10013DD3A /* UINavigationController+XXTransition.m */,
+				0412C97A1E8B87E10013DD3A /* UIViewController+XXTransition.h */,
+				0412C97B1E8B87E10013DD3A /* UIViewController+XXTransition.m */,
+				0412C97C1E8B87E10013DD3A /* XXAnimatedTransitioning.h */,
+				0412C97D1E8B87E10013DD3A /* XXAnimatedTransitioning.m */,
+				0412C97E1E8B87E10013DD3A /* XXGlobalConst.h */,
+				0412C97F1E8B87E10013DD3A /* XXGlobalConst.m */,
+				0412C9801E8B87E10013DD3A /* XXInteractiveTransition.h */,
+				0412C9811E8B87E10013DD3A /* XXInteractiveTransition.m */,
+				0412C9821E8B87E10013DD3A /* XXMacro.h */,
+				0412C9831E8B87E10013DD3A /* XXTransition.h */,
+				0412C9841E8B87E10013DD3A /* XXTransition.m */,
+				0412C9851E8B87E10013DD3A /* XXTransitionManager.h */,
+				0412C9861E8B87E10013DD3A /* XXTransitionManager.m */,
+			);
+			path = XXTransition;
+			sourceTree = "<group>";
+		};
 		04141AE31E68FF1700E30C0D = {
 			isa = PBXGroup;
 			children = (
-				046E98171E8A18ED0018CAED /* ViewController.m */,
 				04141AEE1E68FF1700E30C0D /* IMtest */,
 				04141B081E68FF1700E30C0D /* IMtestTests */,
 				04141B131E68FF1800E30C0D /* IMtestUITests */,
@@ -582,12 +630,17 @@
 		04141AEE1E68FF1700E30C0D /* IMtest */ = {
 			isa = PBXGroup;
 			children = (
+				0412C9771E8B87E10013DD3A /* XXTransition */,
 				04141B221E68FF9400E30C0D /* HelpDeskSDK */,
 				04141B481E68FF9400E30C0D /* HelpDeskUI */,
 				04141AF21E68FF1700E30C0D /* AppDelegate.h */,
 				04141AF31E68FF1700E30C0D /* AppDelegate.m */,
-				04141AF51E68FF1700E30C0D /* ViewController.h */,
-				04141AF61E68FF1700E30C0D /* ViewController.m */,
+				0412C9961E8B8AB80013DD3A /* ViewController.h */,
+				0412C9971E8B8AB80013DD3A /* ViewController.m */,
+				0412C98E1E8B880F0013DD3A /* NextVC.h */,
+				0412C98F1E8B880F0013DD3A /* NextVC.m */,
+				0412C9911E8B88220013DD3A /* ThirdVC.h */,
+				0412C9921E8B88220013DD3A /* ThirdVC.m */,
 				04C40CC41E7699DA00CF73A9 /* IFAccelerometer.h */,
 				04C40CC51E7699DA00CF73A9 /* IFAccelerometer.m */,
 				046E98251E8A3FF50018CAED /* 和田玉@2x.png */,
@@ -1502,12 +1555,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046E98181E8A18ED0018CAED /* ViewController.m in Sources */,
 				04141CC61E68FF9400E30C0D /* HDSDKHelper.m in Sources */,
 				04141CDE1E68FF9400E30C0D /* HDMessageCell.m in Sources */,
 				04141C9B1E68FF9400E30C0D /* MWGridCell.m in Sources */,
+				0412C98C1E8B87E10013DD3A /* XXTransition.m in Sources */,
 				04141CED1E68FF9400E30C0D /* HDFaceView.m in Sources */,
 				04141CB71E68FF9400E30C0D /* PSTCollectionViewData.m in Sources */,
+				0412C98A1E8B87E10013DD3A /* XXGlobalConst.m in Sources */,
 				04141CF11E68FF9400E30C0D /* HDImageView.m in Sources */,
 				04141CCF1E68FF9400E30C0D /* HDEmoji.m in Sources */,
 				04141CCC1E68FF9400E30C0D /* UIResponder+HRouter.m in Sources */,
@@ -1528,6 +1582,7 @@
 				04141CF41E68FF9400E30C0D /* HDRecordView.m in Sources */,
 				04141CBC1E68FF9400E30C0D /* PSTGridLayoutInfo.m in Sources */,
 				04141C7E1E68FF9400E30C0D /* HDCDDeviceManager+Remind.m in Sources */,
+				0412C98B1E8B87E10013DD3A /* XXInteractiveTransition.m in Sources */,
 				04141CE21E68FF9400E30C0D /* HDBubbleView+Gif.m in Sources */,
 				04141CD41E68FF9400E30C0D /* HDChineseToPinyin.m in Sources */,
 				04141C7B1E68FF9400E30C0D /* HDCDDeviceManager+Media.m in Sources */,
@@ -1538,6 +1593,7 @@
 				04141CDD1E68FF9400E30C0D /* HDCustomMessageCell.m in Sources */,
 				04141CDB1E68FF9400E30C0D /* SatisfactionViewController.m in Sources */,
 				04141CB21E68FF9400E30C0D /* UIView+EMWebCacheOperation.m in Sources */,
+				0412C9891E8B87E10013DD3A /* XXAnimatedTransitioning.m in Sources */,
 				04141CAD1E68FF9400E30C0D /* UIImage+EMGIF.m in Sources */,
 				04141C8F1E68FF9400E30C0D /* MJRefreshBackGifFooter.m in Sources */,
 				04141CB01E68FF9400E30C0D /* UIImageView+EMHighlightedWebCache.m in Sources */,
@@ -1559,6 +1615,7 @@
 				04141CBD1E68FF9400E30C0D /* PSTGridLayoutItem.m in Sources */,
 				04141CB61E68FF9400E30C0D /* PSTCollectionViewController.m in Sources */,
 				04141CF21E68FF9400E30C0D /* HDTextView.m in Sources */,
+				0412C98D1E8B87E10013DD3A /* XXTransitionManager.m in Sources */,
 				04141CD21E68FF9400E30C0D /* HDEmotionManager.m in Sources */,
 				04141CE51E68FF9400E30C0D /* HDBubbleView+Order.m in Sources */,
 				04141CB51E68FF9400E30C0D /* PSTCollectionViewCell.m in Sources */,
@@ -1587,6 +1644,7 @@
 				04141CD71E68FF9400E30C0D /* HDLocationViewController.m in Sources */,
 				04141C881E68FF9400E30C0D /* MJRefreshBackFooter.m in Sources */,
 				04141CB81E68FF9400E30C0D /* PSTCollectionViewFlowLayout.m in Sources */,
+				0412C9881E8B87E10013DD3A /* UIViewController+XXTransition.m in Sources */,
 				04141CA01E68FF9400E30C0D /* MWTapDetectingView.m in Sources */,
 				04141C8A1E68FF9400E30C0D /* MJRefreshFooter.m in Sources */,
 				04141C9D1E68FF9400E30C0D /* MWPhoto.m in Sources */,
@@ -1600,6 +1658,7 @@
 				04141C891E68FF9400E30C0D /* MJRefreshComponent.m in Sources */,
 				04141C7A1E68FF9400E30C0D /* HDAudioRecorderUtil.m in Sources */,
 				04141C921E68FF9400E30C0D /* MJRefreshGifHeader.m in Sources */,
+				0412C9931E8B88220013DD3A /* ThirdVC.m in Sources */,
 				04141C871E68FF9400E30C0D /* MJRefreshAutoFooter.m in Sources */,
 				04141CAC1E68FF9400E30C0D /* UIButton+EMWebCache.m in Sources */,
 				04141C971E68FF9400E30C0D /* UIScrollView+MJExtension.m in Sources */,
@@ -1619,9 +1678,12 @@
 				04141CF01E68FF9400E30C0D /* HDChatToolbarItem.m in Sources */,
 				04141CC81E68FF9400E30C0D /* HDUserModel.m in Sources */,
 				04141C9E1E68FF9400E30C0D /* MWPhotoBrowser.m in Sources */,
+				0412C9901E8B880F0013DD3A /* NextVC.m in Sources */,
 				04141CA31E68FF9400E30C0D /* EMSDImageCache.m in Sources */,
+				0412C9981E8B8AB80013DD3A /* ViewController.m in Sources */,
 				04141CD61E68FF9400E30C0D /* HDMessageReadManager.m in Sources */,
 				04141CD31E68FF9400E30C0D /* FixFopen.c in Sources */,
+				0412C9871E8B87E10013DD3A /* UINavigationController+XXTransition.m in Sources */,
 				04141CDA1E68FF9400E30C0D /* HDViewController.m in Sources */,
 				04141CA71E68FF9400E30C0D /* EMSDWebImageDownloaderOperation.m in Sources */,
 			);
@@ -1780,7 +1842,7 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/UMSocialUI",
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/UMSocialSDK",
 				);
-				GCC_PREFIX_HEADER = /Users/mac/Desktop/tttest/IMtest/IMtest/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/tttest/IMtest/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1817,7 +1879,7 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/UMSocialUI",
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/UMSocialSDK",
 				);
-				GCC_PREFIX_HEADER = /Users/mac/Desktop/tttest/IMtest/IMtest/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/tttest/IMtest/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

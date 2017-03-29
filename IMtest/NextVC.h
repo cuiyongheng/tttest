@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NextVC.h
 //  IMtest
 //
 //  Created by MAC on 2017/3/29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface NextVC : UIViewController
 
 @end

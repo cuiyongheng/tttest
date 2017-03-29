@@ -10,13 +10,13 @@
 #import "ViewController.h"
 #import <UMSocialNetwork/UMSocialNetwork.h>
 #import <UMSocialCore/UMSocialCore.h>
+#import "XXTransition.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -39,13 +39,16 @@
     
     
     
-    
     [self UMinit];
     
-    
+    [self XXPush];
     
     
     return YES;
+}
+
+- (void)XXPush {
+    [XXTransition startGoodJob:GoodJobTypeAll transitionDuration:0.3];
 }
 
 - (void)UMinit {

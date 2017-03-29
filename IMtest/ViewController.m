@@ -2,7 +2,7 @@
 //  ViewController.m
 //  IMtest
 //
-//  Created by MAC on 2017/3/3.
+//  Created by MAC on 2017/3/29.
 //  Copyright © 2017年 MAC. All rights reserved.
 //
 
@@ -13,6 +13,8 @@
 #import <UMSocialCore/UMSocialCore.h>
 #import <UMSocialNetwork/UMSocialNetwork.h>
 #import <UShareUI/UShareUI.h>
+#import "NextVC.h"
+#import "ThirdVC.h"
 
 @interface ViewController ()<MWPhotoBrowserDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -24,6 +26,7 @@
 
 @property (nonatomic, strong) NSMutableDictionary *seleteDic;
 
+
 @end
 
 @implementation ViewController
@@ -34,16 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    button.frame = CGRectMake(100, 100, 100, 100);
-//    [self.view addSubview:button];
-//    button.backgroundColor = [UIColor blackColor];
-//    [button addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
-//    
-//     [[IFAccelerometer shareAccelerometer]addOberser:self];
-
+    // Do any additional setup after loading the view.
     self.photoArr = [NSMutableArray arrayWithObjects:@"https://imgssl.jaadee.com/images/201703/thumb_img/33743_d8dfd577f0a.jpg",
                      @"https://imgssl.jaadee.com/images/201703/thumb_img/33742_d8dfd4f125c.jpg",
                      @"https://imgssl.jaadee.com/images/201703/thumb_img/33741_d8dfd478ff0.jpg",
@@ -65,12 +59,26 @@
     [self.view addSubview:_tableView];
     
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(edit:)];;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(shareAction:)];
     
     self.seleteDic = [NSMutableDictionary dictionaryWithCapacity:0];
+    
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 400, 100, 100);
+    button.backgroundColor = [UIColor yellowColor];
+    [button addTarget:self action:@selector(pushNext:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+}
+
+- (void)pushNext:(UIButton *)button {
+    NextVC *nextVC = [[NextVC alloc] init];
+    [self.navigationController pushViewController:nextVC animated:YES];
 }
 
 #pragma mark - delegate
@@ -94,7 +102,7 @@
 //- (void)accelerateWithX:(NSNumber *)x withY:(NSNumber *)y withZ:(NSNumber *)z withTimeInterval:(NSTimeInterval)timeInterval
 //{
 //    NSLog(@"%@------%@-------%@-------%f------%f", x, y, z,timeInterval);
-//    
+//
 //}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -219,7 +227,7 @@
     //创建图片内容对象
     UMShareImageObject *shareObject = [[UMShareImageObject alloc] init];
     //如果有缩略图，则设置缩略图
-//    shareObject.thumbImage = [UIImage imageNamed:@"icon"];
+    //    shareObject.thumbImage = [UIImage imageNamed:@"icon"];
     [shareObject setShareImage:@"https://imgssl.jaadee.com/images/201703/thumb_img/33743_d8dfd577f0a.jpg"];
     [shareObject setShareImage:@"https://imgssl.jaadee.com/images/201703/thumb_img/33742_d8dfd4f125c.jpg"];
     [shareObject setShareImage:@"https://imgssl.jaadee.com/images/201703/thumb_img/33741_d8dfd478ff0.jpg"];
@@ -239,12 +247,19 @@
     }];
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
