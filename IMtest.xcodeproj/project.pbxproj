@@ -166,6 +166,10 @@
 		046E98261E8A3FF50018CAED /* 和田玉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046E98251E8A3FF50018CAED /* 和田玉@2x.png */; };
 		046E98281E8A3FFB0018CAED /* 南红耳饰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046E98271E8A3FFB0018CAED /* 南红耳饰@2x.png */; };
 		046E982A1E8A40010018CAED /* 南红戒指@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046E98291E8A40010018CAED /* 南红戒指@2x.png */; };
+		0480E5101E94C7B900FCA67A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480E50F1E94C7B900FCA67A /* TableViewCell.m */; };
+		0480E5181E94D58900FCA67A /* ZSEnlargeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480E5131E94D58900FCA67A /* ZSEnlargeVideoView.m */; };
+		0480E5191E94D58900FCA67A /* ZSVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480E5151E94D58900FCA67A /* ZSVideoManager.m */; };
+		0480E51A1E94D58900FCA67A /* ZSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480E5171E94D58900FCA67A /* ZSViewController.m */; };
 		04C40CC61E7699DA00CF73A9 /* IFAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C40CC51E7699DA00CF73A9 /* IFAccelerometer.m */; };
 		6DE6D9503005B2BB74DF5A2D /* libPods-IMtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F5E64FDC51A4BD7F31DC58 /* libPods-IMtest.a */; };
 /* End PBXBuildFile section */
@@ -537,6 +541,14 @@
 		046E98251E8A3FF50018CAED /* 和田玉@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "和田玉@2x.png"; sourceTree = "<group>"; };
 		046E98271E8A3FFB0018CAED /* 南红耳饰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "南红耳饰@2x.png"; sourceTree = "<group>"; };
 		046E98291E8A40010018CAED /* 南红戒指@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "南红戒指@2x.png"; sourceTree = "<group>"; };
+		0480E50E1E94C7B900FCA67A /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0480E50F1E94C7B900FCA67A /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		0480E5121E94D58900FCA67A /* ZSEnlargeVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSEnlargeVideoView.h; sourceTree = "<group>"; };
+		0480E5131E94D58900FCA67A /* ZSEnlargeVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSEnlargeVideoView.m; sourceTree = "<group>"; };
+		0480E5141E94D58900FCA67A /* ZSVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSVideoManager.h; sourceTree = "<group>"; };
+		0480E5151E94D58900FCA67A /* ZSVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSVideoManager.m; sourceTree = "<group>"; };
+		0480E5161E94D58900FCA67A /* ZSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSViewController.h; sourceTree = "<group>"; };
+		0480E5171E94D58900FCA67A /* ZSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSViewController.m; sourceTree = "<group>"; };
 		04C40CC41E7699DA00CF73A9 /* IFAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAccelerometer.h; sourceTree = "<group>"; };
 		04C40CC51E7699DA00CF73A9 /* IFAccelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAccelerometer.m; sourceTree = "<group>"; };
 		1396C401A106BABDD5F70556 /* Pods-IMtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMtest.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMtest/Pods-IMtest.release.xcconfig"; sourceTree = "<group>"; };
@@ -633,6 +645,7 @@
 				0412C9771E8B87E10013DD3A /* XXTransition */,
 				04141B221E68FF9400E30C0D /* HelpDeskSDK */,
 				04141B481E68FF9400E30C0D /* HelpDeskUI */,
+				0480E5111E94D58900FCA67A /* AVPlayer */,
 				04141AF21E68FF1700E30C0D /* AppDelegate.h */,
 				04141AF31E68FF1700E30C0D /* AppDelegate.m */,
 				0412C9961E8B8AB80013DD3A /* ViewController.h */,
@@ -641,6 +654,8 @@
 				0412C98F1E8B880F0013DD3A /* NextVC.m */,
 				0412C9911E8B88220013DD3A /* ThirdVC.h */,
 				0412C9921E8B88220013DD3A /* ThirdVC.m */,
+				0480E50E1E94C7B900FCA67A /* TableViewCell.h */,
+				0480E50F1E94C7B900FCA67A /* TableViewCell.m */,
 				04C40CC41E7699DA00CF73A9 /* IFAccelerometer.h */,
 				04C40CC51E7699DA00CF73A9 /* IFAccelerometer.m */,
 				046E98251E8A3FF50018CAED /* 和田玉@2x.png */,
@@ -1350,6 +1365,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0480E5111E94D58900FCA67A /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0480E5121E94D58900FCA67A /* ZSEnlargeVideoView.h */,
+				0480E5131E94D58900FCA67A /* ZSEnlargeVideoView.m */,
+				0480E5141E94D58900FCA67A /* ZSVideoManager.h */,
+				0480E5151E94D58900FCA67A /* ZSVideoManager.m */,
+				0480E5161E94D58900FCA67A /* ZSViewController.h */,
+				0480E5171E94D58900FCA67A /* ZSViewController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		E9FB7439868AAB09D6D32CB4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1569,6 +1597,7 @@
 				04141CBE1E68FF9400E30C0D /* PSTGridLayoutRow.m in Sources */,
 				04141C8C1E68FF9400E30C0D /* MJRefreshAutoGifFooter.m in Sources */,
 				04141CD91E68FF9400E30C0D /* HDRefreshTableViewController.m in Sources */,
+				0480E5191E94D58900FCA67A /* ZSVideoManager.m in Sources */,
 				04141CA51E68FF9400E30C0D /* EMSDWebImageDecoder.m in Sources */,
 				04141CA81E68FF9400E30C0D /* EMSDWebImageManager.m in Sources */,
 				04141C941E68FF9400E30C0D /* MJRefreshStateHeader.m in Sources */,
@@ -1622,6 +1651,7 @@
 				04141C861E68FF9400E30C0D /* MBProgressHUD.m in Sources */,
 				04141C961E68FF9400E30C0D /* MJRefreshConst.m in Sources */,
 				04141CA21E68FF9400E30C0D /* DACircularProgressView.m in Sources */,
+				0480E51A1E94D58900FCA67A /* ZSViewController.m in Sources */,
 				04141AF41E68FF1700E30C0D /* AppDelegate.m in Sources */,
 				04141CA41E68FF9400E30C0D /* EMSDWebImageCompat.m in Sources */,
 				04141CE71E68FF9400E30C0D /* HDBubbleView+Text.m in Sources */,
@@ -1648,6 +1678,7 @@
 				04141CA01E68FF9400E30C0D /* MWTapDetectingView.m in Sources */,
 				04141C8A1E68FF9400E30C0D /* MJRefreshFooter.m in Sources */,
 				04141C9D1E68FF9400E30C0D /* MWPhoto.m in Sources */,
+				0480E5181E94D58900FCA67A /* ZSEnlargeVideoView.m in Sources */,
 				04141C7D1E68FF9400E30C0D /* HDCDDeviceManager+ProximitySensor.m in Sources */,
 				04141CBF1E68FF9400E30C0D /* PSTGridLayoutSection.m in Sources */,
 				04141CEB1E68FF9400E30C0D /* HDBubbleView+Voice.m in Sources */,
@@ -1656,6 +1687,7 @@
 				04141CA61E68FF9400E30C0D /* EMSDWebImageDownloader.m in Sources */,
 				04141CB11E68FF9400E30C0D /* UIImageView+EMWebCache.m in Sources */,
 				04141C891E68FF9400E30C0D /* MJRefreshComponent.m in Sources */,
+				0480E5101E94C7B900FCA67A /* TableViewCell.m in Sources */,
 				04141C7A1E68FF9400E30C0D /* HDAudioRecorderUtil.m in Sources */,
 				04141C921E68FF9400E30C0D /* MJRefreshGifHeader.m in Sources */,
 				0412C9931E8B88220013DD3A /* ThirdVC.m in Sources */,
