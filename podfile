@@ -5,5 +5,7 @@ target :'IMtest' do
 pod 'MWPhotoBrowser'
 pod 'SDWebImage'
 pod ‘UMengUShare/UI’
+pod 'LPDQuoteImagesView'
+
 
 end

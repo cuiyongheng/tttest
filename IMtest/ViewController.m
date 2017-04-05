@@ -15,6 +15,7 @@
 #import <UShareUI/UShareUI.h>
 #import "NextVC.h"
 #import "ThirdVC.h"
+#import <LPDQuoteImagesView.h>
 
 @interface ViewController ()<MWPhotoBrowserDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -26,6 +27,7 @@
 
 @property (nonatomic, strong) NSMutableDictionary *seleteDic;
 
+@property (nonatomic, strong) UIView *photoView;
 
 @end
 
@@ -74,6 +76,15 @@
     [button addTarget:self action:@selector(pushNext:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    UIButton *photobutton = [UIButton buttonWithType:UIButtonTypeCustom];
+    photobutton.frame = CGRectMake(250, 400, 100, 100);
+    photobutton.backgroundColor = [UIColor redColor];
+    [photobutton addTarget:self action:@selector(photobutton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:photobutton];
+    
+    _photoView = [[UIView alloc] initWithFrame:CGRectMake(0, 500, WIDTH, 100)];
+    _photoView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:_photoView];
 }
 
 - (void)pushNext:(UIButton *)button {
@@ -140,6 +151,71 @@
 }
 
 
+#pragma mark - photoPicker
+- (void)photobutton:(UIButton *)button {
+//    //1.初始化一个XMNPhotoPickerController
+//    XMNPhotoPickerController *photoPickerC = [[XMNPhotoPickerController alloc] initWithMaxCount:9 delegate:nil];
+//    //3.取消注释下面代码,使用代理方式回调,代理方法参考XMNPhotoPickerControllerDelegate
+//    //    photoPickerC.photoPickerDelegate = self;
+//    
+//    //3..设置选择完照片的block 回调
+//    __weak typeof(*&self) wSelf = self;
+//    [photoPickerC setDidFinishPickingPhotosBlock:^(NSArray<UIImage *> *images, NSArray<XMNAssetModel *> *assets) {
+//        __weak typeof(*&self) self = wSelf;
+//        NSLog(@"picker images :%@ \n\n assets:%@",images,assets);
+//        
+//        //!!!如果需要自定义大小的图片 使用下面方法
+//        //        [[XMNPhotoManager sharedManager] getThumbnailWithAsset:<# asset in assets #> size:<# your size #> completionBlock:^(UIImage * _Nullable image) {
+//        //
+//        //        }];
+//        
+////        self.assets = [assets copy];
+////        [self.collectionView reloadData];
+//        //XMNPhotoPickerController 确定选择,并不会自己dismiss掉,需要自己dismiss
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    }];
+//    
+//    //4.设置选择完视频的block回调
+//    [photoPickerC setDidFinishPickingVideoBlock:^(UIImage *coverImage, XMNAssetModel * asset) {
+//        __weak typeof(*&self) self = wSelf;
+//        NSLog(@"picker image :%@\n\n asset:%@\n\n",coverImage,asset);
+////        self.assets = @[asset];
+////        [self.collectionView reloadData];
+//        //XMNPhotoPickerController 确定选择,并不会自己dismiss掉,需要自己dismiss
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    }];
+//    
+//    //5.设置用户取消选择的回调 可选
+//    [photoPickerC setDidCancelPickingBlock:^{
+//        NSLog(@"photoPickerC did Cancel");
+//        //此处不需要自己dismiss
+//    }];
+//    
+//    //6. 显示photoPickerC
+//    [self presentViewController:photoPickerC animated:YES completion:nil];
+    
+    
+    LPDQuoteImagesView *quoteImagesView =[[LPDQuoteImagesView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) withCountPerRowInView:5 cellMargin:12];
+    //初始化view的frame, view里每行cell个数， cell间距（上方的图片1 即为quoteImagesView）
+    
+    quoteImagesView.maxSelectedCount = 6;
+    //最大可选照片数
+    
+    quoteImagesView.collectionView.scrollEnabled = NO;
+    //view可否滑动
+    
+    quoteImagesView.navcDelegate = self;    //self 至少是一个控制器。
+    //委托（委托controller弹出picker，且不用实现委托方法）
+    
+    [_photoView addSubview:quoteImagesView];
+    //把view加到某一个视图上，就什么都不用管了！！！！
+    
+    
+}
+
+
+
+
 #pragma mark - edit
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -171,6 +247,10 @@
 
 
 
+
+
+
+
 #pragma mark - photoBrowser
 - (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
     return self.photobrowserArr.count;
@@ -184,14 +264,17 @@
 }
 
 
+
+
+
+
+
+
 #pragma mark - shareAction
 - (void)shareAction:(UIBarButtonItem *)button {
     //    [self UMShare];
     
     [self initActivityVC];
-    
-    
-    
 }
 
 - (void)initActivityVC {

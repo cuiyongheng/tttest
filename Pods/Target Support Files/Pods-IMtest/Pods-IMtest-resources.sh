@@ -77,11 +77,13 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "LPDQuoteImagesView/LPDQuoteImagesView/Assets/LPDImagePickerController.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle"
   install_resource "UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle"
   install_resource "UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "LPDQuoteImagesView/LPDQuoteImagesView/Assets/LPDImagePickerController.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle"
   install_resource "UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle"
   install_resource "UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle"

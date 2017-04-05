@@ -170,6 +170,7 @@
 		0480E5181E94D58900FCA67A /* ZSEnlargeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480E5131E94D58900FCA67A /* ZSEnlargeVideoView.m */; };
 		0480E5191E94D58900FCA67A /* ZSVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480E5151E94D58900FCA67A /* ZSVideoManager.m */; };
 		0480E51A1E94D58900FCA67A /* ZSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480E5171E94D58900FCA67A /* ZSViewController.m */; };
+		0480E51C1E94F1F400FCA67A /* libLPDQuoteImagesView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0480E51B1E94F1F400FCA67A /* libLPDQuoteImagesView.a */; };
 		04C40CC61E7699DA00CF73A9 /* IFAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C40CC51E7699DA00CF73A9 /* IFAccelerometer.m */; };
 		6DE6D9503005B2BB74DF5A2D /* libPods-IMtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F5E64FDC51A4BD7F31DC58 /* libPods-IMtest.a */; };
 /* End PBXBuildFile section */
@@ -549,6 +550,7 @@
 		0480E5151E94D58900FCA67A /* ZSVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSVideoManager.m; sourceTree = "<group>"; };
 		0480E5161E94D58900FCA67A /* ZSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSViewController.h; sourceTree = "<group>"; };
 		0480E5171E94D58900FCA67A /* ZSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSViewController.m; sourceTree = "<group>"; };
+		0480E51B1E94F1F400FCA67A /* libLPDQuoteImagesView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLPDQuoteImagesView.a; path = "../../Library/Developer/Xcode/DerivedData/IMtest-artqlkxartozlmhhirolgejrobmp/Build/Products/Debug-iphonesimulator/LPDQuoteImagesView/libLPDQuoteImagesView.a"; sourceTree = "<group>"; };
 		04C40CC41E7699DA00CF73A9 /* IFAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFAccelerometer.h; sourceTree = "<group>"; };
 		04C40CC51E7699DA00CF73A9 /* IFAccelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFAccelerometer.m; sourceTree = "<group>"; };
 		1396C401A106BABDD5F70556 /* Pods-IMtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMtest.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMtest/Pods-IMtest.release.xcconfig"; sourceTree = "<group>"; };
@@ -561,6 +563,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0480E51C1E94F1F400FCA67A /* libLPDQuoteImagesView.a in Frameworks */,
 				046E981E1E8A38380018CAED /* UMSocialCore.framework in Frameworks */,
 				046E981F1E8A38380018CAED /* UMSocialNetwork.framework in Frameworks */,
 				046E98201E8A38380018CAED /* UMSocialSDKPromptResources.bundle in Frameworks */,
@@ -1350,6 +1353,7 @@
 		04141CF71E68FFCC00E30C0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0480E51B1E94F1F400FCA67A /* libLPDQuoteImagesView.a */,
 				046E981B1E8A38370018CAED /* UMSocialCore.framework */,
 				046E981C1E8A38370018CAED /* UMSocialNetwork.framework */,
 				046E981D1E8A38380018CAED /* UMSocialSDKPromptResources.bundle */,
